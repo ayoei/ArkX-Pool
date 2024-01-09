@@ -32,17 +32,9 @@ console.log(count);
 
 
 // Task 3 :  Time to draw !
-
 let height = 4;
-
-// the top of the tree
-for (let i = 1; i <= height; i++) {
-    let spaces = ' '.repeat(height - i);
-    let stars = '*'.repeat(2 * i - 1);
-    console.log(spaces + stars);
+for (i = 1; i <= height; i++) {
+    console.log((" ").repeat(height - i) + ("*").repeat(2 * i - 1));
 }
-
-// the trunk of the tree
-let trunkSpaces = ' '.repeat(height - 1);
-console.log(trunkSpaces + '|');
+console.log((" ").repeat(height - 1) + "|");
 
