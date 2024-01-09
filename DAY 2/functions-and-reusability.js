@@ -15,12 +15,7 @@ function calcFactorial(num1) {
 let num1 = 5;
 calcFactorial(num1);
 
-//task 2
-function task2(n,p) {
-  let c = calcFactorial(n)/(calcFactorial(p) * calcFactorial(n-p));
-  return c;
-}
-console.log(task2(5,2));
+
 // 2. ​nDigits(number)​
 
 function countDigits(num2) {
