@@ -15,8 +15,6 @@ console.log(factorial);
 
 // Task 2 : How many digits ?
 
-
-
 var num2 = 123542;
 
 // Your program
