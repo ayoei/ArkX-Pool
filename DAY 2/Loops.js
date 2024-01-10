@@ -15,17 +15,6 @@ console.log(factorial);
 
 // Task 2 : How many digits ?
 
-// var num2 = 123542;
-
-// // Your program
-// let count = 0;
-
-// while (num2 >  0) {
-//   num2 = Math.floor(num2/10);
-//   count++;
-// }
-// console.log(count);
-// ==========================
 
 let num2 = 123542;
 let counter = 0;
@@ -45,17 +34,20 @@ console.log(counter);
 
 
 // Task 3 :  Time to draw !
+
+
 let height = 4;
 for (let i = 0; i <= height; i++) {
   let space = "";
   for (let j = 0; j < height - i; j++) {
     space += " ";
   }
+  
   let star = "*";
   for (let k = 0; k < 2 * i; k++) {
     star += "*";
-
   }
+
   let tree = space + star;
   console.log(tree);
 
