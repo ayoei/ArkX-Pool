@@ -56,11 +56,18 @@ function findBookByGenre(genre) {
 
   // Iterate through the array of books
   for (let i = 0; i < books.length; i++) {
-
-    // we used an if statement to check if the current book belongs to the specified genre
-    if (books[i].genres.includes(genre)) {
-
-      // If it does, add the book to the genreBooks array
+    // Flag to indicate if the current book belongs to the specified genre
+    let belongsToGenre = false;
+    // Iterate through the genres of the current book
+    for (let j = 0; j < books[i].genres.length; j++) {
+      // Check if the current genre matches the specified genre
+      if (books[i].genres[j] === genre) {
+        belongsToGenre = true;
+        break; // Exit the loop once a match is found
+      }
+    }
+    // If the book belongs to the specified genre, add it to the array
+    if (belongsToGenre) {
       genreBooks.push(books[i]);
     }
   }
