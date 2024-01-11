@@ -113,16 +113,17 @@ whatGrade(score);
 
 function calcFactorial(num3) {
   let factorial = 1;
-
+  
   for (let i = 1; i <= num3; i++) {
     factorial = factorial * i;
   }
-
+  
   return factorial
 }
 
 let num3 = 5;
 calcFactorial(num3);
+
 
 // =========== Calculate C ============ 
 function calculateC(n,p) {
