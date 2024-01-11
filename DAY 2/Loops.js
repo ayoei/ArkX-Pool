@@ -57,6 +57,6 @@ let trunk = "|";
 for (let i = 0; i < height - 1; i++) {
   trunkSpace += " ";
 }
+
 let trunkResult = trunkSpace + trunk;
 console.log(trunkResult);
-
