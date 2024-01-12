@@ -25,7 +25,7 @@ function priceOfBook(bookName) {
 
 
 
-// 3nd Function
+// 2nd Function
 
 // this function is to get a list of affordable books within a specified budget
 function affordableBooks(budget) {
