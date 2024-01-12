@@ -2,28 +2,30 @@
 
 const books = require("./books.json");
 
+// 1st Function
 
 // this is a function to get the price of a book by its name
 function priceOfBook(bookName) {
   // write your code here
-
+  
   // Iterating through the array of books
   for (let i = 0; i < books.length; i++) {
-
-     // we used an if statement to Check if the current book's title matches the specified bookName
+    
+    // we used an if statement to Check if the current book's title matches the specified bookName
     if (books[i].title === bookName) {
-
+      
       // and if found, return the price of the book
       return books[i].price;
     }
   }
-
+  
   // if the book is not found, just return null.
   return null;
 }
 
 
 
+// 3nd Function
 
 // this function is to get a list of affordable books within a specified budget
 function affordableBooks(budget) {
@@ -46,6 +48,8 @@ function affordableBooks(budget) {
   return affordable;
 }
 
+
+// 3rd Function
 
 // this function is used to find books by a specific genre
 function findBookByGenre(genre) {
@@ -75,6 +79,7 @@ function findBookByGenre(genre) {
   return genreBooks;
 }
 
+// 4th Function
 
 // a function to group books by genre
 function groupByGenre() {
@@ -109,6 +114,9 @@ function groupByGenre() {
   return grouped;
 }
 
+
+// 5th function
+
 // this function uses bubble sort method and sorts the books by price in ascending order
 function sortBooksByPrice() {
   // write your code here
@@ -133,6 +141,7 @@ function sortBooksByPrice() {
   // Return the sorted array
   return sorted;
 }
+
 
 (function main() {
   try {
