@@ -129,7 +129,7 @@ function sortBooksByPrice() {
     // an Inner loop for each pass
     for (let j = 0; j < sorted.length - i - 1; j++) {
 
-      // an if statement Compare adjacent books by price and swap if necessary
+      // this is an if statement to Compare adjacent books by price and swap if necessary
       if (sorted[j].price > sorted[j + 1].price) {
         const temp = sorted[j];
         sorted[j] = sorted[j + 1];
